@@ -1,0 +1,439 @@
+
+ body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container
+{
+    height:100px;
+    background: #FFEBE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row
+{
+    height:60px;
+    width:1370px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box
+{
+    display: inline-block;
+}
+.container .row .box img
+{
+    width: 227px;
+    height: 56px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.box ul
+{
+    list-style-type: none;
+    white-space: nowrap ;
+}
+.box ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+.box ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    color: #895F37;
+    margin-right: 18px;
+}
+ul li a:hover{
+    text-decoration: none #D3BAA4;
+    font-size: 22px;
+}
+.box ul li i
+{
+    color: #895F37;
+}
+.icon-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    gap: 10px ;
+}
+
+.icon-menu li a {
+    text-decoration: none;
+    color: #895F37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-menu li a i {
+    font-size: 22px;
+    color: #895F37;
+    margin-bottom: 3px;
+}
+
+.icon-menu li a span {
+    font-size: 12px;
+}
+/* 1) GOLD HOVER EFFECT */
+.box ul li a:hover {
+    color: #D4A017;
+}
+
+.icon-menu li a:hover i,
+.icon-menu li a:hover span {
+    color: #D4A017;
+}
+
+
+/* 2) SMOOTH UNDERLINE ANIMATION */
+.box ul li a {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.box ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D4A017;
+    transition: width 0.3s ease;
+}
+
+.box ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* 3) STICKY NAVBAR */
+.container {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* 4) REDUCE NAVBAR HEIGHT – CLEAN LOOK */
+.container {
+    height: 75px; /* smaller */
+}
+
+.row {
+    height: 50px; /* smaller */
+}
+
+
+/* 5) ICON LABEL IMPROVEMENTS */
+.icon-menu li {
+    width: 50px; /* equal width */
+    text-align: center;
+}
+
+.icon-menu li a i {
+    font-size: 20px;
+}
+
+.icon-menu li a span {
+    font-size: 11px;
+    margin-top: -2px;
+}
+/* FULL SECTION BACKGROUND */
+.collection-section {
+    width: 100%;
+    padding: 70px 0;
+    background-image: url("images/bg.png"); /* your background */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* HEADING STYLE */
+.collection-heading {
+    font-size: 55px;
+    color: #662a2a; /* deep maroon like image */
+    letter-spacing: 8px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* 3-COLUMN GRID */
+.collection-grid {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* PRODUCT BOXES */
+.collection-item {
+    flex: 1;
+    border: 5px solid #8a3c3c; /* maroon border */
+    padding: 5px;
+}
+
+.collection-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* BOTTOM BADGE */
+.collection-badge {
+    width: 250px;
+    margin: 50px auto 0;
+    background: #CFB18B;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: #552f24;
+    font-weight: 700;
+    border: 5px solid #8a3c3c;
+    font-family:"cinzel decorative",serif; 
+}
+
+.collection-badge small {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+section{
+    font-family: "cinzel decorative",serif;
+    text-align: center;
+    color: #662a2a;
+    background-image: url("images/Old crumpled paper texture background_ Horizontal banner 1705.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.collection-box
+{
+    padding: 40px 0;
+}
+.items
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.b1{
+    width:180px;
+}
+.b1 img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.b1 img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b1:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+/* FOOTER BASE */
+.rtg-line {
+    background: #2B1F1A;   /* charcoal brown */
+    color: #EBD7C2;        /* creamy beige */
+    font-family: "Cinzel Decorative", serif;
+    padding-top: 60px;
+}
+
+/* NEWSLETTER */
+.footer-newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-newsletter h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.newsletter-box {
+    margin-top: 20px;
+}
+
+.newsletter-box input {
+    padding: 10px 15px;
+    width: 260px;
+    background: transparent;
+    border: 1px solid #EBD7C2;
+    color: #EBD7C2;
+}
+.newsletter-box button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #BFA27A;
+    border: none;
+    color: #2B1F1A;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.newsletter-box button:hover {
+    background: #d9bc8c;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(191, 162, 122, 0.4);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    border-top: 1px solid #BFA27A;
+    border-bottom: 1px solid #BFA27A;
+    position: relative;
+}
+
+/* gold glow animation on lines */
+.footer-main::before,
+.footer-main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #BFA27A, transparent);
+    opacity: 0.3;
+}
+
+.footer-main::before {
+    top: -1px;
+}
+
+.footer-main::after {
+    bottom: -1px;
+    animation: glowline 4s infinite linear;
+}
+
+@keyframes glowline {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+/* MAIN FOOTER COLUMNS */
+
+
+.footer-col {
+    width: 220px;
+    margin: 20px;
+}
+
+.brand {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+/* SOCIAL ICONS — UPGRADED */
+.social-icons a {
+    display: inline-block;
+    background: #BFA27A;
+    color: #2B1F1A;
+    padding: 10px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* Hover effects */
+.social-icons a:hover {
+    transform: translateY(-6px) scale(1.1);
+    box-shadow: 0 8px 18px rgba(191, 162, 122, 0.6);
+    background: #d9bc8c;
+}
+
+/* Shine line effect */
+.social-icons a::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+    transform: rotate(25deg);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Shine on hover */
+.social-icons a:hover::after {
+    opacity: 1;
+    animation: shine 0.6s linear forwards;
+}
+
+@keyframes shine {
+    0% {
+        transform: translate(-150%, -150%) rotate(25deg);
+    }
+    100% {
+        transform: translate(150%, 150%) rotate(25deg);
+    }
+}
+
+/* BOTTOM STRIP */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #EBD7C2;
+}
+/* UNDERLINE EFFECT ON TITLES */
+.footer-col h4 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 4px;
+    cursor: default;
+}
+
+.footer-col h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: #BFA27A;
+    transition: width 0.4s ease;
+}
+
+.footer-col h4:hover::after {
+    width: 100%;
+}
+
